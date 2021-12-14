@@ -13,10 +13,10 @@ import signal
 import os
 # import csv
 
-baudrate=57600
-readyCommand="Ready" # start signal to arduino
-stopCommand="Stop"  # stop signal to arduino
-startCommand="Start" # start signal from arduino
+baudrate=115200
+readyCommand="" # start signal to arduino
+stopCommand="T"  # stop signal to arduino
+startCommand="R" # start signal from arduino
 timeAllowed=20
 
 running=False
@@ -69,6 +69,7 @@ f = open(outfile, 'w+')
 
 try:
     # catch ready signal from arduino
+    #while True:
     while True:
         try:
             value = ser.readline().decode("ascii")
@@ -82,6 +83,7 @@ try:
             sys.stderr.flush()
             break
 
+    ser.write(startCommand.encode())
     print('Writing results to {}'.format(outfile))
     while True: # while running
         if timeAllowed != 0 and (time.time() - startTime > timeAllowed):
