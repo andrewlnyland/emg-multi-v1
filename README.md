@@ -1,8 +1,26 @@
-# EMG Multi
+# Multi-Electromyogram
+
+Status:
+1. Started designing in 2018, couldn't find sufficient amplifiers or free time to build
+2. Internet of Things course, learned enough to start building and had help and time
+3. Designing the next step *<-- Here, currently*
+    - Radio antenna testing, power sources
+    - Better hardware design and fabrication approach
+    - Considering data analysis approaches for potential future use cases 
+
+## Background
+
+### Purpose
+
+### Original Goal
+
+### Current Goal
+
+## Design
+
+## Implementation
 
 
-
-## Getting started
 
 ## Suggestions for a good README
 Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
